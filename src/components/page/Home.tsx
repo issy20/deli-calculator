@@ -9,8 +9,7 @@ const Home = () => {
   }
   return (
     <Layout>
-      <p className="text-red-500">Hello</p>
-      <button onClick={toCalulator}>Go to Caluculator page</button>
+      <button onClick={toCalulator}>精算する</button>
     </Layout>
   )
 }
