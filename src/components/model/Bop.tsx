@@ -1,16 +1,8 @@
-import { incomeResultState } from '@/atoms/incomeResultState'
-import { spendResultState } from '@/atoms/spendResultState'
 import { calculated } from '@/selectors/calculated'
-import React, { useEffect } from 'react'
-import { useRecoilState, useRecoilValue } from 'recoil'
+import React from 'react'
+import { useRecoilValue } from 'recoil'
 
 export const Bop = () => {
-  // const spend = useRecoilState(spendResultState)
-  // const income = useRecoilState(incomeResultState)
-  // useEffect(() =>  {
-  //   const bop = income - spend
-  // }, [])
-
   const bop = useRecoilValue(calculated)
 
   return (
