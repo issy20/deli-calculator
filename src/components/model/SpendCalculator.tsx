@@ -1,12 +1,6 @@
 import { ListType } from 'lib/type/type'
-import React, {
-  ChangeEvent,
-  ReactFragment,
-  useEffect,
-  useState,
-  VFC,
-} from 'react'
-import { SetterOrUpdater, useRecoilState, useSetRecoilState } from 'recoil'
+import React, { ChangeEvent, useEffect, useState } from 'react'
+import { useSetRecoilState } from 'recoil'
 import { spendResultState } from '@/atoms/spendResultState'
 
 export const SpendCalculator = () => {
